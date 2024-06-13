@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <script src="http://d3js.org/d3.v7.min.js"> </script>
+    <title>Bananas</title>
+</head>
+<body>
+<h3>Транзакции</h3>
+<div>
+    <form>
+        <input type="button" value="Следующий шаг" id="step">
+        <input type="button" value="Анимация" id="all">
+        <input type="button" value="Начать заново" id="start">
+    </form>
+    <svg></svg>
+</div>
+
+<div class="table">
+    <label> Выбор категории
+        <select id="selectCategory"></select>
+    </label>
+    <br>
+    <br>
+    <label>Сортировка по стоимости одной штуки
+        <select id="sortByUnitPrice">
+            <option value="none">Без сортировки</option>
+            <option value="ascending">По возрастанию</option>
+            <option value="descending">По убыванию</option>
+        </select>
+    </label>
+    <br>
+    <br>
+    <label>Сортировка по общей выручке
+        <select id="sortByTotalRevenue">
+            <option value="none">Без сортировки</option>
+            <option value="ascending">По возрастанию</option>
+            <option value="descending">По убыванию</option>
+        </select>
+    </label>
+    <br>
+    <br>
+    <input type="button" id="applyFilter" value="Применить">
+    <input type="button" id="showTable" value="Показать таблицу">
+    <table> </table>
+</div>
+</body>
+<script src="data.js"></script>
+<script src="index.js"></script>
+</html>
